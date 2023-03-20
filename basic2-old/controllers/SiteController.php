@@ -2,7 +2,6 @@
 
 namespace app\controllers;
 
-use appp\classes\components\MyComponent;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -62,10 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index', [
-            'nome' => 'Alexandre',
-            'sobrenome' => 'Duarte'
-        ]);
+        return $this->render('index');
     }
 
     /**

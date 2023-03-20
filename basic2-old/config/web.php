@@ -5,16 +5,6 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'name' => 'Minha Aplicação',
-    'version' => '2.5',
-    'aliases' => [
-        '@meualias1' => 'path/to/meu/alias1',
-    ],
-    'language' => 'en',
-    'charset' => 'UTF-8',
-    /* 'catchAll' => [
-        'pessoas/index'
-    ], */
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'aliases' => [
@@ -25,10 +15,6 @@ $config = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'sdasfasfasdasddad',
-        ],
-        'myComponent' =>[
-            'class' => 'app\classes\components\MyComponent',
-            'string' => 'Yii2 Vídeos'
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -81,7 +67,7 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        'allowedIPs' => ['127.0.0.1', '::1'],
+        //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
 

@@ -1,17 +1,10 @@
 <?php
 
 /** @var yii\web\View $this */
-use \yii\jui\DatePicker;
+
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
-
-    <div>
-        <?= DatePicker::widget([
-                'name' => 'data_venda',
-                'language' => 'pt'
-        ]) ?>
-    </div>
 
     <div class="jumbotron text-center bg-transparent">
         <h1 class="display-4">Congratulations!</h1>
